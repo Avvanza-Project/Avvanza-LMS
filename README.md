@@ -29,7 +29,7 @@ docker-compose --version
 ## Estructura esperada del proyecto
 
 ```bash
-avanzzas-contenedor/
+Avvanza-LMS/
 ├── README.md
 ├── plugins/
 │   └── local/
@@ -41,7 +41,7 @@ avanzzas-contenedor/
 ## Clonar este repositorio
 
 ```bash
-git clone https://github.com/EmanuelAlv/avanzzas-contenedor.git
+git https://github.com/Avvanza-Project/Avvanza-LMS/tree/Backend-Plugins
 cd avanzzas-contenedor
 ```
 
@@ -78,7 +78,7 @@ cp config.docker-template.php server/moodle/config.php
 ### 4. Copiar plugins personalizados
 
 ```bash
-cp -r ../avanzzas-contenedor/plugins/local/* server/moodle/local/
+cp -r ../Avvanza-LMS/plugins/local/* server/moodle/local/
 ```
 
 ---
