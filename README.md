@@ -6,6 +6,7 @@ Este repositorio contiene la estructura y los plugins personalizados del proyect
 > Cada integrante del equipo debe clonar esas dependencias localmente para recrear el mismo ambiente.
 
 ---
+> Guia de instalacion basada en Linux 
 
 ## Requisitos previos
 
@@ -26,6 +27,70 @@ docker-compose --version
 
 ---
 
+## Instalación de dependencias (Linux - Ubuntu / Linux Mint)
+
+Si no tienes instaladas las herramientas necesarias, sigue estos pasos:
+
+---
+
+### 1. Instalar Git
+
+```bash
+sudo apt update
+sudo apt install git -y
+```
+
+---
+
+### 2. Instalar Docker
+
+```bash
+sudo apt install docker.io -y
+```
+
+Agregar tu usuario al grupo docker (para evitar usar sudo):
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+👉 Cierra sesión y vuelve a entrar, o ejecuta:
+
+```bash
+newgrp docker
+```
+
+---
+
+### 3. Instalar Docker Compose
+
+```bash
+sudo apt install docker-compose -y
+```
+
+---
+
+### 4. Verificar instalación
+
+```bash
+git --version
+docker --version
+docker-compose --version
+```
+
+---
+
+### ⚠️ Notas importantes
+
+- Docker debe estar corriendo antes de levantar el entorno.
+- Si Docker da error de permisos, asegúrate de haber ejecutado:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+---
+
 ## Estructura esperada del proyecto
 
 ```bash
@@ -41,8 +106,8 @@ Avvanza-LMS/
 ## Clonar este repositorio
 
 ```bash
-git https://github.com/Avvanza-Project/Avvanza-LMS/tree/Backend-Plugins
-cd avanzzas-contenedor
+git clone https://github.com/Avvanza-Project/Avvanza-LMS.git
+cd Avvanza-LMS
 ```
 
 ---
